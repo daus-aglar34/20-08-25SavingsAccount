@@ -13,6 +13,14 @@ public class SavingsAccount {
         return interest;
     }
 
+    public void withdraw(int x) {
+        if (x <= balance) {
+            balance -= x;
+        } else {
+            System.out.println("Insufficient funds for withdrawal.");
+        }
+    }
+
 
 
     public void displayCustomer() {
